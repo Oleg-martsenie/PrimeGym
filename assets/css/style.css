@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600;800&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vollkorn', serif;
+}
+
+a {text-decoration: none;}
+li {list-style-type: none;}
+
+
+/*Header*/
+.container {
+    max-width: 1120px;
+    margin: auto;
+}
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-area {
+    background-color: #0F0F0F;
+    max-width: 100vw;
+    height: 100px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topredbar {
+    height: 12px;
+    background: #CC0000;
+}
+
+.header-left {
+    margin-left: 20px;
+    padding: 30px 20px;
+}
+
+.header-left h1 {
+    color: #e7e7e7;
+    font-size: 34px;
+    text-shadow: 2px 1px .5px #615355;
+}
+
+.header-right nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-right nav a {
+    padding-right: 20px;
+    margin-right: 40px;
+}
+
+.header-right a {
+    font-size: 21px;
+    font-weight: 600;
+    color: #8E0000;
+    border-bottom: 4px solid transparent;
+    transition: all .3s ease-in-out;
+}
+
+.header-right a:hover {
+    color:  #BC2120;
+    border-bottom: 4px solid #A62C2B;
+}
+
+/*First Slider*/
+.banner {
+    background-image: url(../images/corda-naval.png);
+    background-position: center;
+    background-size: cover;
+    height:780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.banner-enter {
+    display: inline-flex;
+}
+
+.banner-button button { 
+    cursor: pointer;
+    border: 0;
+    padding: 15px 90px;
+    background: transparent;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    border: 2px solid #8E0000;
+    transition: all .3s ease-in-out;
+    border-radius:5px
+}
+
+.banner-button button:hover {
+    border: 2px solid #df1616;
+    background: #110202;
+    color: #e0dada;
+}
+
+/*Section 2*/
+.area1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.area-hours {
+    margin-top: 5%;
+}
+
+.area-hours h2 {
+    letter-spacing: 1px;
+    color: #111;
+    font-size: 40px;
+}
+
+.area-hours h2::before {
+    content: "";
+    display: inline-block;
+    background: #AA0000;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.area1-tempos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+}
+
+.area1--item {
+    margin-top: 30px;
+    background: #E4E4E4;
+    border-radius: 5px;
+    padding: 40px 40px;
+}
+
+.area1--item h3,
+.area1--item p {
+text-align: left;
+    margin-bottom: 20px;
+}
+
+.area1--item p {
+    font-size: 18px;
+    font-family: Courier;
+    font-weight: 600;
+}
+
+.area1--item .infor-p--area1 {
+    font-size: 18px;
+    font-family: Courier;
+    font-weight: 600;
+}
+
+.area1--item .unknonw {
+    border-bottom: 3px solid #b3b2b2;
+    margin-bottom: 30px;
+}
+
+/*Área  2 Contact*/
+.area2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+.area2--contato {
+    margin-top: 5%;
+}
+
+.area2--contato h2 {
+    color: #111;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+
+.area2--contato h2::before {
+    content: "";
+    display: inline-block;
+    background: #770000;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.area2--social-medias {
+    margin-top: 2%;
+    background-color:  #E4E4E4;
+    width: 98.7vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.area2--social-medias img {
+    margin-right: 20px;
+    width: 60px;
+    border: 4px solid #111;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.area2--social-medias img:hover {
+    border: 4px solid #FFE961;
+    background-color: #BC2120;
+}
+
+/*Gallery */
+.area3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+.area3--gallery {
+    margin-top: 5%;
+}
+
+.area3--gallery h2 {
+    color: #111;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+
+.area3--gallery h2::before {
+    content: "";
+    display: inline-block;
+    background: #a31010;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.hero {
+    width: 1000px;
+    height: 400px;
+    background-color: #CCC;
+    margin: 120px auto;
+    display: flex;
+}
+
+.col {
+    height:100% ;
+    flex: 1;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.col:nth-child(1) {
+    background: #FE0000;
+}
+
+.col:nth-child(2) {
+    background: #8F111D;
+}
+
+.col:nth-child(3) {
+    background: #F63C41;
+}
+
+.col h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: Helvetica;
+}
+
+.caption {
+    max-width: 230px;
+    font-size: 16px;
+    margin: 28px 0;
+    display: none;
+}
+
+.caption button {
+    border: 3px solid #ffffff;
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: white;
+    border-radius:30px;
+    margin-top: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.caption button:hover {
+    border: 3px solid #FFE961;
+    transform: scale(1.1);
+}
+
+.col img {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.col:hover {
+    flex-grow: 2.5;
+}
+
+.col:hover .caption{
+    display: block;
+}
+/*Differente section  Bennefits of Gymnastic
+Utilizando partes do código do projeto starbucks
+como: bar, h2, area2*/
+
+
+/*Patter Areas - -- Itens which I used
+the same class more than two time*/
+
+.block--bar {
+    height: 22px;
+    background-color:red;
+    width: 168px;
+    margin-bottom: 15px;
+}
+
+
+
+.areabutton{
+    display: inline-block;
+    border: 2px solid #E30022;
+    padding: 10px 30px;
+    color:#862E4D;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: all .4s ease-in ;
+}
+
+.areabutton:hover {
+    background-color:transparent;
+    transform: scale(1.1);
+    border: 2px solid #ff7300;
+    color: #862E4D;
+}
+
+.area4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.area4 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin:16px 16px 0px 0px;
+    line-height: 1.5;
+    color: black;
+}
+
+.area4--content {
+    padding: 90px;
+}
+
+.area4--text {
+    font-size: 16px;
+    margin: 30px 0;
+    max-width: 400px;
+    text-align: justify;
+    line-height: 25px;
+    color:#110202;
+}
+
+.area4-img1 {
+    background-image:url(../images/jumping2.jpeg);
+    background-size: cover;
+    background-position: right;
+    height: 350px;
+
+}
+.area4-img2 {
+    background-image:url(../images/man1.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+/*Área 5 section - */
+
+
+.area5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.area5 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin:16px 16px 0px 0px;
+    line-height: 1.5;
+    color: black;
+}
+
+.area5--content {
+    padding: 90px;
+}
+
+.area5--text {
+    font-size: 16px;
+    margin: 30px 0;
+    max-width: 400px;
+    text-align: justify;
+    line-height: 25px;
+    color:#110202;
+}
+
+.area5-img1 {
+    background-image:url(../images/woman.jpeg);
+    background-size: cover;
+    background-position: right;
+    height: 350px;
+
+}
+.area5-img2 {
+    background-image:url(../images/man2.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+/*Área 6 section*/
+
+.area6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.area6 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin:16px 16px 0px 0px;
+    line-height: 1.5;
+    color: black;
+}
+
+.area6--content {
+    padding: 90px;
+}
+
+.area6--text {
+    font-size: 16px;
+    margin: 30px 0;
+    max-width: 400px;
+    text-align: justify;
+    line-height: 25px;
+    color:#110202;
+}
+
+.area6-img1 {
+    background-image:url(../images/jogging.jpeg);
+    background-size: cover;
+    background-position: right;
+    height: 350px;
+
+}
+.area6-img2 {
+    background-image:url(../images/women2.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+}
+
+/*Footer Area*/
+.area-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 10px 20px 10px;
+}
+
+.area-footer p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.area-footer a {
+    color: #111;
+}
+
+.area-footer a:hover {
+    text-decoration: underline;
+}
+
+.area-footer span {
+    font-size: 18px;
+    color: #1f1d1d;
+    text-align: center;
+}
+
+.area-footer span::before {
+    content: '';
+    width: 200px;
+    height: 2px;
+    background: rebeccapurple;
+    margin:15px auto;
+    display: block;
+}
+
+/*Responsividade @medias*/
+
+@media (min-width:769px) and (max-width:1140px) {
+    .hero {
+        width: 860px;
+        height: 387px;
+    }
+}
+
+@media (min-width: 426px) and (max-width:768px) {
+    .header-right nav a {
+        margin-right: 30px;
+    }
+
+    .header-right a {
+        font-size: 24px;
+    }
+    .banner {
+        background-position: right;
+    }
+    .hero {
+        width: 724px;
+        height: 413px;
+    }
+    .col img {
+        width: 170px;
+    }
+    .area4,
+    .area5 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area6 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area4--text,
+    .area5--text,
+    .area6--text {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .area6-img1 {
+        background-image:url(../images/yoga.jpeg);
+        background-position: center;
+    }
+}
+
+@media (max-width:426px) {
+    .container {
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+
+    .area1-tempos {
+        grid-template-columns:1fr;
+    }
+
+    .header-right nav {
+        display: none;
+    }
+
+    .banner-button button {
+        padding: 8px 20px;
+    }
+
+    
+
+
+
+    .area2--social-medias img {
+        width: 40px;
+    }
+
+    .hero {
+        width: 400px;
+        flex-direction: column;
+        margin: auto 0;
+        margin-top: 20px;
+    }
+
+    .col img {
+        display: none;
+    }
+
+    .area4--content,
+    .area5--content,
+    .area6--content {
+    padding: 60px;
+    }
+
+    .area4,
+    .area5,
+    .area6 {
+        grid-template-columns: 1fr;
+    }
+
+    .area4 h2,
+    .area5 h2,
+    .area6 h2 {
+        font-size: 28px;
+    }
+
+    .area-hours h2,
+    .area2--contato h2,
+    .area3--gallery h2,
+    .area4--content h2 {
+        font-size: 35px;
+    }
+
+    .area6-img1 {
+        background-image:url(../images/yoga.jpeg);
+        background-position: center;
+    }
+
+    .area4--text,
+    .area5--text,
+    .area6--text {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .area-footer p {
+        text-align: center;
+    }
+}
